@@ -3,12 +3,12 @@ import css from './Friends.module.css'
 
 const Friends = ({friends}) => {
   return (
-    <ul class={css.friendList}>
+    <ul className={css.friendList}>
       {friends.map(item => 
-      <li class={css.item}>
-        <span class={ item.isOnline ? css.statusOnline : css.statusOffline}></span>
-        <img class={css.avatar} src={item.avatar} alt="" width="48" />
-        <h1 class={css.name}>{item.name}</h1>
+      <li className={css.item} key={item.id}>
+        <span className={ item.isOnline ? css.statusOnline : css.statusOffline}></span>
+        <img className={css.avatar} src={item.avatar} alt="" width="48" />
+        <h1 className={css.name}>{item.name}</h1>
       </li>
       )}
     </ul>

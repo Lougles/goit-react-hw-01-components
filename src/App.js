@@ -9,9 +9,6 @@ import friends from './friends.json';
 import transaction from './transaction.json';
 
 
-// import qwerty from "./paint.json";
-
-
 const App = () => {
   return (
     <div>

@@ -8,7 +8,7 @@ const Statistics = ({ title, stats}) => {
       <h2 className={css.title}>{title}</h2>
       <ul className={css.statList}>
         {stats.map(item =>
-        <li key={stats.id} className={css.item}>
+        <li key={item.id} className={css.item}>
           <span className={css.label}>{item.label} </span>
           <span className={css.percentage}>{item.percentage}%</span>
         </li>)}
